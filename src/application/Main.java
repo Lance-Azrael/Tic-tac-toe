@@ -18,9 +18,16 @@ public class Main extends Application {
             primaryStage.setScene(new Scene(root));
             primaryStage.setResizable(false);
             primaryStage.show();
+
+//            Controller controller = fxmlLoader.getController();
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public void stop() {
+        System.exit(0);
     }
 
     public static void main(String[] args) {
